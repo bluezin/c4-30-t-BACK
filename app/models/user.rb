@@ -6,4 +6,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   validates :email, presence: true, format: { with: /\A[^@\s]+@[^@\s]+\z/ }
+  has_many :orders
 end
