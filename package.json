@@ -6,9 +6,15 @@
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
+<<<<<<< HEAD
     "bootstrap": "^5.1.3",
     "turbolinks": "^5.2.0",
     "webpack": "^5.71.0"
+=======
+    "@rails/webpacker": "^5.4.3",
+    "@webpack-cli/serve": "^1.6.1",
+    "turbolinks": "^5.2.0"
+>>>>>>> 596a7d5bf4c8dedde2da38af151ef5ef292fbcca
   },
   "version": "0.1.0",
   "devDependencies": {
