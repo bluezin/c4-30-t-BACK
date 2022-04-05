@@ -37,7 +37,7 @@ gem 'pundit'
 gem 'cloudinary', '~> 1.16.0'
 gem 'simple_form'
 gem 'bootstrap', '~> 5.1', '>= 5.1.3'
-
+gem 'dotenv-rails', groups: [:development, :test]
 
 
 group :development, :test do
