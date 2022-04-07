@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2022_04_05_163423) do
+=======
+ActiveRecord::Schema.define(version: 2022_04_05_211141) do
+>>>>>>> 306d5ade9bd00b61c2027f9f224abbc8883f6497
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,6 +41,7 @@ ActiveRecord::Schema.define(version: 2022_04_05_163423) do
   end
 
   create_table "categories", force: :cascade do |t|
+    t.string "image_uid"
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -55,13 +60,14 @@ ActiveRecord::Schema.define(version: 2022_04_05_163423) do
   end
 
   create_table "products", force: :cascade do |t|
-    t.bigint "categories_id", null: false
-    t.string "name"
-    t.text "description"
-    t.float "price"
+    t.bigint "category_id", null: false
+    t.string "name", null: false
+    t.text "description", null: false
+    t.float "price", null: false
+    t.string "state"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["categories_id"], name: "index_products_on_categories_id"
+    t.index ["category_id"], name: "index_products_on_category_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -81,5 +87,9 @@ ActiveRecord::Schema.define(version: 2022_04_05_163423) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+<<<<<<< HEAD
   add_foreign_key "products", "categories", column: "categories_id"
+=======
+  add_foreign_key "products", "categories"
+>>>>>>> 306d5ade9bd00b61c2027f9f224abbc8883f6497
 end
