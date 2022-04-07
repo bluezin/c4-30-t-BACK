@@ -7,4 +7,5 @@ class User < ApplicationRecord
 
   validates :email, presence: true, format: { with: /\A[^@\s]+@[^@\s]+\z/ }
   has_many :orders
+
 end
