@@ -1,7 +1,7 @@
 class CreateCategories < ActiveRecord::Migration[6.0]
   def change
     create_table :categories do |t|
-      t.string :image_uid
+      t.text :image
       t.string :name
 
       t.timestamps
