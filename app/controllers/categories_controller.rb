@@ -1,5 +1,5 @@
 class CategoriesController < ApplicationController
-  def show
-    render json: Category.all
+  def index
+    @categories = Category.all
   end
 end

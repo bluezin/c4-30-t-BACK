@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   end
 
   # rutas para las categorias
-  get "/categories/", to: "categories#show"
+  get "/categories", to: "categories#index", format: "json"
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
