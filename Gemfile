@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # change
-ruby '2.7.0'
+ruby '2.6.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.0.4', '>= 6.0.4.7'
@@ -41,6 +41,9 @@ gem 'simple_form'
 gem 'bootstrap', '~> 5.1', '>= 5.1.3'
 gem 'dotenv-rails', groups: [:development, :test]
 
+
+# rake-cors
+gem 'rack-cors'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
