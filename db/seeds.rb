@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+# Adding categories
 categories = Category.create([
   { name: "Pizzas", image: "https://cdn5.dibujos.net/dibujos/pintados/202039/racion-de-pizza-comida-pan-y-pasta-12008621.jpg" },
   { name: "Hamburguesas", image: "https://static.vecteezy.com/system/resources/previews/004/806/564/large_2x/drawing-of-hamburger-with-cheese-tomatoes-chop-lettuce-onion-cucumber-in-flat-cartoon-style-illustration-for-design-fast-food-menu-hamburger-isolated-icons-vector.jpg" },
