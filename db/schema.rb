@@ -61,6 +61,7 @@ ActiveRecord::Schema.define(version: 2022_04_05_211141) do
     t.text "description", null: false
     t.float "price", null: false
     t.string "state"
+    t.text "image", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["category_id"], name: "index_products_on_category_id"
