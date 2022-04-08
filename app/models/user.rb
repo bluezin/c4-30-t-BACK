@@ -8,4 +8,9 @@ class User < ApplicationRecord
   validates :email, presence: true, format: { with: /\A[^@\s]+@[^@\s]+\z/ }
   has_many :orders
 
+  def generate_jwt
+    JWT.encode({ id: id,
+                exp: 60.days.from_now.to_i },
+              Rails.application.secrets.secret_key_base)
+  end
 end
