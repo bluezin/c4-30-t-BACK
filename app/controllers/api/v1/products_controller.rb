@@ -1,24 +1,31 @@
 class Api::V1::ProductsController < Api::V1::BaseController
   before_action :set_product, only: [ :show, :update, :destroy ]
   def index
-    @products = policy_scope(Product)
+    # @products = policy_scope(Product)
+    @products = Product.all
   end
 
   def show
   end
 
   def update
-    if @product.update(product_params)
-      render :show
+    new_data = product_params
+
+    if @product.update(new_data)
+      render json: @product
     else
       render_error
     end
   end
 
   def create
-    @product = Product.new(product_params)
-    @product.user = current_user
-    authorize @product
+    data = product_params
+
+    @product = Product.new(name: data["name"], description: data["description"], price: data["price"], state: data["state"], image: data["image"], category_id: data["category_id"])
+
+    # @product.user = current_user
+    # authorize @product
+
     if @product.save
       render :show, status: :created
     else
@@ -36,11 +43,13 @@ class Api::V1::ProductsController < Api::V1::BaseController
 
   def set_product
     @product = Product.find(params[:id])
-    authorize @product  # For Pundit
+    # authorize @product  # For Pundit
   end
 
-  def  product_params
-    params.require(:product).permit(:name, :description)
+  def product_params
+    body = request.body.as_json
+
+    JSON.parse(body[0]) if !body.empty?
   end
 
   def render_error

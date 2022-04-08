@@ -6,6 +6,6 @@ run Rails.application
 
 use Rack::Cors do
   allow do
-    origins 'http://localhost:3001/inicio-sesion'
+    origins '*'
   end
 end
