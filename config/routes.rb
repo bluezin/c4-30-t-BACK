@@ -17,6 +17,9 @@ Rails.application.routes.draw do
   # rutas para las categorias
   get "/categories", to: "categories#index", format: "json"
 
+  # rutas para inicio de seción
+  post "/sign_up", to: "registers#sign_up"
+  post "/sign_in", to: "registers#sign_in"
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
