@@ -18,8 +18,14 @@ Rails.application.routes.draw do
   get "/categories", to: "categories#index", format: "json"
 
   # rutas para inicio de seción
-  post "/sign_up", to: "registers#sign_up"
   post "/sign_in", to: "registers#sign_in"
 
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # sign up y verify code
+  post "/sign_up", to: "registers#sign_up"
+  post "/verify_code/:id", to: "registers#verify_code"
+
+  # recuperacion del password
+  post "/verify_account", to: "passwords#verify_account"
+  post "/recovert_account", to: "passwords#recovert_account"
+  put "/update_password", to: "passwords#update_password"
 end

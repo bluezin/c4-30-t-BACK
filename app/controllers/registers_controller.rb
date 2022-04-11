@@ -6,9 +6,11 @@ class RegistersController < ApplicationController
     if @user.save
       session[:user_id] = @user.id
 
+      PasswordConfirmationMailer.with(user: @user).password_confirmation.deliver_later
+
       render json: @user
     else
-      render json: @user.errors
+      render json: "Correo invalido o contraseña muy corta", status: :bad_request
     end
   end
 
@@ -16,15 +18,27 @@ class RegistersController < ApplicationController
     data = user_params
     @user = User.find_by(email: data["email"])
 
-    if @user.present? # falta saver si es que ya se registro ocreo una cuenta con este usuario :  @user.authenticate(data["password"])
+    if @user.present? && @user.valid_password?(data["password"])
       session[:user_id] = @user.id
 
       render json: @user
     else
-      render json: { errors: "Correo o contraseña invalida"}
+      render json: "Correo o contraseña invalidos", status: :bad_request
     end
   end
 
+  # Verificacion del codigo enviado a su correo del usuario
+  def verify_code
+    @user = User.find(params[:id])
+
+    data = user_params
+
+    if data["code"] === 123488 && @user.present?
+      render json: @user
+    else
+      render json: "Código incorrecto", status: :bad_request
+    end
+  end
 
   private
 
