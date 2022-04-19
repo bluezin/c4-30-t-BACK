@@ -116,7 +116,7 @@ Rails.application.configure do
     port:                 587,
     domain:               'vercel.com',
     user_name:            'yadiraco304@gmail.com',
-    password:             'doramasl',
+    password:             'yadi123',
     authentication:       'plain',
     enable_starttls_auto: true,
     open_timeout:         5,
