@@ -56,5 +56,4 @@ class Api::V1::ProductsController < Api::V1::BaseController
     render json: { errors: @product.errors.full_messages },
       status: :unprocessable_entity
   end
-
 end

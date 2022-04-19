@@ -31,8 +31,12 @@ Rails.application.routes.draw do
 
   # rutas para la compra de porductos
   get "/orders/:id", to: "orders#index"
+  get "/orders/view/:id", to: "orders#show"
   post "/orders/:id", to: "orders#create"
   put "/orders/clear/:id", to: "orders#clear"
+  delete "/orders/:id", to: "orders#destroy"
+  post "/orders/:order_id/aument", to: "orders#aument"
+  post "/orders/:order_id/minus", to: "orders#minus"
 
   # user
   put "/user/:id", to: "users#update"
@@ -40,5 +44,8 @@ Rails.application.routes.draw do
 
   # buy
   get "/buy/:id", to: "buys#index"
+  get "/buy/show/:buy_id", to: "buys#show"
   post "/buy/:id", to: "buys#create"
+  delete "/buy/:id", to: "buys#destroy"
+
 end

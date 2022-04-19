@@ -9,6 +9,7 @@ class CreateProducts < ActiveRecord::Migration[6.0]
       t.text :image, null: false
       t.string :time_preparation
       t.boolean :buy
+      t.integer :count
 
       t.timestamps
     end

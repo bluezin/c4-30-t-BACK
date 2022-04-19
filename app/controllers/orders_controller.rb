@@ -8,6 +8,17 @@ class OrdersController < ApplicationController
     end
   end
 
+  def show
+    order_id = params[:id]
+    @order = Order.find(order_id)
+
+    if @order.present?
+      render json: @order
+    else
+      render json: "Ocorrio un errorr"
+    end
+  end
+
   def create
     user_id = params[:id]
     @user = User.find(user_id)
@@ -28,5 +39,40 @@ class OrdersController < ApplicationController
     @orders.map { |item| item.destroy }
 
     render json: "Se limpio correctamente"
+  end
+
+  def destroy
+    order_id = params[:id]
+    @order = Order.find(order_id)
+
+    if @order.present?
+      @order.destroy
+
+      render json: order_id
+    else
+      render json: "Ocorrio un errorr"
+    end
+  end
+
+  def aument
+    @order = Order.find(params[:order_id])
+
+    if @order.present?
+      @order.products["count"] = params[:count] + 1
+      render json: @order.save
+    else
+      render json: "Algó salio mal"
+    end
+  end
+
+  def minus
+    @order = Order.find(params[:order_id])
+
+    if @order.present?
+      @order.products["count"] = params[:count] - 1
+      render json: @order.save
+    else
+      render json: "Algó salio mal"
+    end
   end
 end

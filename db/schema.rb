@@ -54,6 +54,11 @@ ActiveRecord::Schema.define(version: 2022_04_19_062058) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "order_products", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "orders", force: :cascade do |t|
     t.string "state"
     t.bigint "user_id", null: false
@@ -72,6 +77,7 @@ ActiveRecord::Schema.define(version: 2022_04_19_062058) do
     t.text "image", null: false
     t.string "time_preparation"
     t.boolean "buy"
+    t.integer "count"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["category_id"], name: "index_products_on_category_id"
