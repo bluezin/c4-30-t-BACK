@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_05_211141) do
+ActiveRecord::Schema.define(version: 2022_04_19_062058) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,17 @@ ActiveRecord::Schema.define(version: 2022_04_05_211141) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
+  create_table "buys", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.string "hour"
+    t.jsonb "products"
+    t.string "amount"
+    t.string "state"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_buys_on_user_id"
+  end
+
   create_table "categories", force: :cascade do |t|
     t.text "image"
     t.string "name"
@@ -43,15 +54,10 @@ ActiveRecord::Schema.define(version: 2022_04_05_211141) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "order_products", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "orders", force: :cascade do |t|
-    t.float "amount"
     t.string "state"
     t.bigint "user_id", null: false
+    t.jsonb "products"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_orders_on_user_id"

@@ -30,10 +30,15 @@ Rails.application.routes.draw do
   put "/update_password", to: "passwords#update_password"
 
   # rutas para la compra de porductos
-  get "/orders", to: "orders#index"
-  post "/orders/create", to: "orders#create"
+  get "/orders/:id", to: "orders#index"
+  post "/orders/:id", to: "orders#create"
+  put "/orders/clear/:id", to: "orders#clear"
 
   # user
   put "/user/:id", to: "users#update"
   get "/user/:id", to: "users#show"
+
+  # buy
+  get "/buy/:id", to: "buys#index"
+  post "/buy/:id", to: "buys#create"
 end
