@@ -8,6 +8,7 @@ class CreateProducts < ActiveRecord::Migration[6.0]
       t.string :state
       t.text :image, null: false
       t.string :time_preparation
+      t.boolean :buy
 
       t.timestamps
     end

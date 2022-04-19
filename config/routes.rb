@@ -28,4 +28,12 @@ Rails.application.routes.draw do
   post "/verify_account", to: "passwords#verify_account"
   post "/recovert_account", to: "passwords#recovert_account"
   put "/update_password", to: "passwords#update_password"
+
+  # rutas para la compra de porductos
+  get "/orders", to: "orders#index"
+  post "/orders/create", to: "orders#create"
+
+  # user
+  put "/user/:id", to: "users#update"
+  get "/user/:id", to: "users#show"
 end

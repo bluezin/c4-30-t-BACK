@@ -51,8 +51,10 @@ ActiveRecord::Schema.define(version: 2022_04_05_211141) do
   create_table "orders", force: :cascade do |t|
     t.float "amount"
     t.string "state"
+    t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
   create_table "products", force: :cascade do |t|
@@ -63,6 +65,7 @@ ActiveRecord::Schema.define(version: 2022_04_05_211141) do
     t.string "state"
     t.text "image", null: false
     t.string "time_preparation"
+    t.boolean "buy"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["category_id"], name: "index_products_on_category_id"
@@ -78,6 +81,14 @@ ActiveRecord::Schema.define(version: 2022_04_05_211141) do
     t.string "last_name"
     t.text "direction"
     t.boolean "admin"
+    t.text "phone"
+    t.text "district"
+    t.integer "card_number"
+    t.text "card_type"
+    t.text "reference_house"
+    t.text "house_number"
+    t.string "expiration"
+    t.string "cvv"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_users_on_email", unique: true
@@ -85,5 +96,6 @@ ActiveRecord::Schema.define(version: 2022_04_05_211141) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "orders", "users"
   add_foreign_key "products", "categories"
 end
