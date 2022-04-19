@@ -5,7 +5,7 @@ class BuysController < ApplicationController
     if @list_buy.present?
       render json: @list_buy
     else
-      render json: "Ocurrio un error", state: :bad_request
+      render json: [], state: :bad_request
     end
   end
 
