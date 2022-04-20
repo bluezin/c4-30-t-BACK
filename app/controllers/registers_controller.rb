@@ -33,7 +33,7 @@ class RegistersController < ApplicationController
 
     data = user_params
 
-    if data["code"] === 123488 && @user.present?
+    if data["code"] === @user.code && @user.present?
       render json: @user
     else
       render json: "Código incorrecto", status: :bad_request
