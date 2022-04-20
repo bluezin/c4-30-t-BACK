@@ -10,6 +10,7 @@ class CreateProducts < ActiveRecord::Migration[6.0]
       t.string :time_preparation
       t.boolean :buy
       t.integer :count
+      t.boolean :favorite
 
       t.timestamps
     end

@@ -78,6 +78,7 @@ ActiveRecord::Schema.define(version: 2022_04_19_062058) do
     t.string "time_preparation"
     t.boolean "buy"
     t.integer "count"
+    t.boolean "favorite"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["category_id"], name: "index_products_on_category_id"
