@@ -101,6 +101,7 @@ ActiveRecord::Schema.define(version: 2022_04_19_062058) do
     t.text "house_number"
     t.string "expiration"
     t.string "cvv"
+    t.string "code"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_users_on_email", unique: true

@@ -44,6 +44,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.text :house_number
       t.string :expiration
       t.string :cvv
+      t.string :code
 
       t.timestamps null: false
     end
