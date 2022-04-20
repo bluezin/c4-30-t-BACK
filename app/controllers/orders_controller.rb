@@ -56,10 +56,14 @@ class OrdersController < ApplicationController
 
   def aument
     @order = Order.find(params[:order_id])
+    @user = User.find(params[:user_id])
 
     if @order.present?
       @order.products["count"] = params[:count] + 1
-      render json: @order.save
+
+      if @order.save
+        render json: @user.orders
+      end
     else
       render json: "Algó salio mal"
     end
@@ -67,6 +71,7 @@ class OrdersController < ApplicationController
 
   def minus
     @order = Order.find(params[:order_id])
+    @user = User.find(params[:user_id])
 
     if @order.present?
       @order.products["count"] = params[:count] - 1
