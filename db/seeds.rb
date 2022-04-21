@@ -10,27 +10,27 @@
 categories = Category.create([
     {
       name: "Pizzas",
-      image:"https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Pizzas.png?alt=media&token=c77fb95c-baf4-4a49-85aa-1f9a0048b070",
+      image: "https://i.postimg.cc/cHb7kKsJ/Pizzas.png",
     },
     {
       name: "Hamburguesas",
-      image:"https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Hamburguesas.png?alt=media&token=0a01d299-9197-4866-bf67-b041ce5f408a",
+      image: "https://i.postimg.cc/6q4rk93f/Hamburguesas.png",
     },
     {
       name: "Sushi",
-      image:"https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Sushi.png?alt=media&token=0e2c2099-ea60-4521-8927-5df55cdc49c4",
+      image: "https://i.postimg.cc/bdXx8KSc/Sushi.png",
     },
     {
       name: "Ensaladas",
-      image:"https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Ensaladas.png?alt=media&token=3eea7c33-c1f9-47d7-84a1-9fd9134ba02f",
+      image: "https://i.postimg.cc/KcCwRjnF/Ensaladas.png",
     },
     {
       name: "Postres",
-      image:"https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Postres.png?alt=media&token=7a33f660-39aa-4cbd-a997-7e4dffaf8b52",
+      image: "https://i.postimg.cc/Kc1CGB3J/Postres.png",
     },
     {
       name: "Bebidas",
-      image:"https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Bebidas.png?alt=media&token=669ab338-a7d4-46d2-9933-640b1355d00a",
+      image: "https://i.postimg.cc/G22JjPnN/Bebidas.png",
     }
 ])
 
@@ -42,7 +42,7 @@ categories = Category.create([
     price: 13,
     category_id: 2,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Double%20Porto%20Burger.png?alt=media&token=cd355da1-d26f-4c34-a3cf-3272be466edb",
+    image: "https://i.postimg.cc/j2N2sycF/Double-Porto-Burger.png",
     state: "disponible"
   },
   {
@@ -51,7 +51,7 @@ categories = Category.create([
     price: 11,
     category_id: 2,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Mega%20Burger.png?alt=media&token=4f14d7ad-2a3f-4301-83df-190282f029e4",
+    image: "https://i.postimg.cc/zX88bmGB/Mega-Burger.png",
     state: "disponible"
 
   },
@@ -61,7 +61,7 @@ categories = Category.create([
     price: 13,
     category_id: 2,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Ribarde.png?alt=media&token=ab464ee2-e3ac-4beb-afa3-8945769a0088",
+    image: "https://i.postimg.cc/JhwT08RY/Ribarde.png",
     state: "disponible"
     },
   {
@@ -70,7 +70,7 @@ categories = Category.create([
     price: 11,
     category_id: 2,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Mega%20Burger.png?alt=media&token=4f14d7ad-2a3f-4301-83df-190282f029e4",
+    image: "https://i.postimg.cc/6pFPZRf0/Power.png",
     state: "disponible"
 
   },
@@ -80,7 +80,7 @@ categories = Category.create([
     price: 11,
     category_id: 2,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Popeye.png?alt=media&token=c71835ad-cd24-45ca-b68d-e79e14a0284f",
+    image: "https://i.postimg.cc/VsF2hJzf/Popeye.png",
     state: "disponible"
   },
   {
@@ -89,7 +89,7 @@ categories = Category.create([
     price: 20,
     category_id: 1,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Borde%20Relleno.png?alt=media&token=eae9c030-c344-46e7-afa2-d89b31d07b8c",
+    image: "https://i.postimg.cc/HjDm3KQS/Borde-Relleno.png",
     state: "disponible"
   },
   {
@@ -98,7 +98,7 @@ categories = Category.create([
     price: 12,
     category_id: 1,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Hot.png?alt=media&token=b27d6e1e-1c1f-43e3-a749-dc11e0e7d242",
+    image: "https://i.postimg.cc/y861GMM5/Hot.png",
     state: "disponible"
   },
   {
@@ -107,7 +107,7 @@ categories = Category.create([
     price: 11,
     category_id: 1,
     time_preparation: "20-25 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Margherita.png?alt=media&token=a69f9b56-1334-4dde-afb0-44eafcf33b21",
+    image: "https://i.postimg.cc/Pfmd5fh9/Margherita.png",
     state: "disponible"
   },
   {
@@ -116,7 +116,7 @@ categories = Category.create([
     price: 20,
     category_id: 1,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Valentina.png?alt=media&token=e53d5c2a-e638-47ae-9b76-a8b586497837",
+    image: "https://i.postimg.cc/vmQV32hH/Valentina.png",
     state: "disponible"
   },
   {
@@ -125,7 +125,7 @@ categories = Category.create([
     price: 12,
     category_id: 1,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Fugazzetta.png?alt=media&token=6fac956a-1c67-483a-b675-ce83c7b8e8a4",
+    image: "https://i.postimg.cc/15GX2cfg/Fugazzetta.png",
     state: "disponible"
   },
   {
@@ -134,7 +134,7 @@ categories = Category.create([
     price: 16,
     category_id: 1,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Trufa%20y%20g%C3%ADrgolas.png?alt=media&token=ec828799-3eeb-4890-9848-1c03e0ee1ec3",
+    image: "https://i.postimg.cc/KzGD3vwf/Trufa-y-g-rgolas.png",
     state: "disponible"
   },
   {
@@ -143,7 +143,7 @@ categories = Category.create([
     price: 11,
     category_id: 1,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Bianca.png?alt=media&token=3488f0a9-aeba-43ca-8a9b-85f51646e382",
+    image: "https://i.postimg.cc/fW3029cX/Bianca.png",
     state: "agotado"
   },
   {
@@ -152,7 +152,7 @@ categories = Category.create([
     price: 11,
     category_id: 1,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Amherite.png?alt=media&token=1ce5b9f7-c7fd-47dc-be5c-111cda06115b",
+    image: "https://i.postimg.cc/9XSQrgqw/Amherite.png",
     state: "agotado"
   },
   {
@@ -161,7 +161,7 @@ categories = Category.create([
     price: 10,
     category_id: 4,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/De%20la%20Monta%C3%B1a.png?alt=media&token=ab693885-ffe9-4345-84eb-34ab4b0b5710",
+    image: "https://i.postimg.cc/QM4HS8V0/De-la-Monta-a.png",
     state: "disponible"
   },
   {
@@ -170,7 +170,7 @@ categories = Category.create([
     price: 10,
     category_id: 4,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Ceviche%20Vasquez.png?alt=media&token=4bad967b-7cca-4328-8962-8041e3ea97b3",
+    image: "https://i.postimg.cc/PxJdq1XM/Ceviche-Vasquez.png",
     state: "disponible"
   },
   {
@@ -179,7 +179,7 @@ categories = Category.create([
     price: 11,
     category_id: 4,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Tempura%20Vegetal.png?alt=media&token=b7231e37-e5af-4159-9f7d-d6957a099a9a",
+    image: "https://i.postimg.cc/cHhTF8wP/Tempura-Vegetal.png",
     state: "agotado"
   },
   {
@@ -188,7 +188,7 @@ categories = Category.create([
     price: 11,
     category_id: 4,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Fraganc%C3%A9%20.png?alt=media&token=6eb8ef39-172d-47a3-8786-6324842aa611",
+    image: "https://i.postimg.cc/TYMhtHYM/Fraganc.png",
     state: "agotado"
   },
   {
@@ -197,7 +197,7 @@ categories = Category.create([
     price: 5,
     category_id: 3,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Nigiri%20Shitake.png?alt=media&token=268c61bd-3f16-43e4-a4e8-d66ebc5224f8",
+    image: "https://i.postimg.cc/L8WcVG2j/Nigiri-Shitake.png",
     state: "disponible"
   },
   {
@@ -206,7 +206,7 @@ categories = Category.create([
     price: 5,
     category_id: 3,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Nigiri%20de%20peras.png?alt=media&token=d1ad1901-4b5e-4c56-9e0f-ab74eea3006f",
+    image: "https://i.postimg.cc/8zs8MTQ1/Nigiri-de-peras.png",
     state: "disponible"
   },
   {
@@ -215,7 +215,7 @@ categories = Category.create([
     price: 12,
     category_id: 3,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Uramaki%20Super%20Kale.png?alt=media&token=9bc60087-91f0-4052-954a-341bc3713587",
+    image: "https://i.postimg.cc/Sxb8zxz9/Uramaki-Super-Kale.png",
     state: "disponible"
   },
   {
@@ -224,7 +224,7 @@ categories = Category.create([
     price: 12,
     category_id: 3,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Uramaki%20Mango.png?alt=media&token=c466ccd4-c222-4caf-8179-f4320f90a22c",
+    image: "https://i.postimg.cc/sXH7BPpf/Uramaki-Mango.png",
     state: "disponible"
   },
   {
@@ -233,7 +233,7 @@ categories = Category.create([
     price: 12,
     category_id: 3,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Uramaki%20Crispy.png?alt=media&token=6093e0dd-6da4-48ba-9e3b-bde81b2b642c",
+    image: "https://i.postimg.cc/hvwLY8jZ/Uramaki-Crispy.png",
     state: "disponible"
   },
   {
@@ -242,7 +242,7 @@ categories = Category.create([
     price: 12,
     category_id: 3,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Uramaki%20Furai.png?alt=media&token=175bc412-5201-4315-8eaa-3b932cad10cb",
+    image: "https://i.postimg.cc/15k0cKbf/Uramaki-Furai.png",
     state: "disponible"
   },
   {
@@ -251,7 +251,7 @@ categories = Category.create([
     price: 11,
     category_id: 3,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Uramaki%20G%C3%ADrgola%20Pank.png?alt=media&token=d50cba9f-be70-40d8-8e86-7ef4c50ffcdd",
+    image: "https://i.postimg.cc/FKZjvXzL/Uramaki-G-rgola-Pank.png",
     state: "disponible"
   },
   {
@@ -260,7 +260,7 @@ categories = Category.create([
     price: 12,
     category_id: 3,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Uramaki%20Acebichado.png?alt=media&token=f65724e7-bff5-400d-b234-ba490a45a13e",
+    image: "https://i.postimg.cc/gjry4tY6/Uramaki-Acebichado.png",
     state: "disponible"
   },
   {
@@ -269,7 +269,7 @@ categories = Category.create([
     price: 12,
     category_id: 3,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Uramaki%20Spicy%20New.png?alt=media&token=1ec9a89e-276d-4114-8b59-ddb4abbb2c99",
+    image: "https://i.postimg.cc/gjfhsYSf/Uramaki-Spicy-New.png",
     state: "disponible"
   },
   {
@@ -278,7 +278,7 @@ categories = Category.create([
     price: 9,
     category_id: 5,
     time_preparation: "20-25 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Torta%20de%20chocolate.png?alt=media&token=91f7e2c1-1b57-4ff3-b4a5-e2dbcad4a33e",
+    image: "https://i.postimg.cc/W1ZnQy0G/Torta-de-chocolate.png",
     state: "agotado"
   },
   {
@@ -287,7 +287,7 @@ categories = Category.create([
     price: 9,
     category_id: 5,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Cobbler.png?alt=media&token=7652f288-071d-4033-b963-6f7f29896334",
+    image: "https://i.postimg.cc/Rhn979n6/Cobbler.png",
     state: "disponible"
   },
   {
@@ -296,7 +296,7 @@ categories = Category.create([
     price: 9,
     category_id: 5,
     time_preparation: "30-35 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Mousse%20de%20Chocolate.png?alt=media&token=40d32f92-fcfd-42d0-953a-f6348ec99da9",
+    image: "https://i.postimg.cc/Dwzh6qs3/Mousse-de-Chocolate.png",
     state: "disponible"
   },
   {
@@ -305,7 +305,7 @@ categories = Category.create([
     price: 9,
     category_id: 5,
     time_preparation: "30-35 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Mousse%20de%20Fresa.png?alt=media&token=764a3da5-b1f1-4453-b501-f49dcb237c66",
+    image: "https://i.postimg.cc/pTKMrkNz/Mousse-de-Fresa.png",
     state: "disponible"
   },
   {
@@ -314,7 +314,7 @@ categories = Category.create([
     price: 9,
     category_id: 5,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Cheesecake%20frutos%20rojos.png?alt=media&token=64bc31aa-89c6-4f31-ae48-0b771bf4e15e",
+    image: "https://i.postimg.cc/kGZGCfW8/Cheesecake-frutos-rojos.png",
     state: "disponible"
   },
   {
@@ -323,7 +323,7 @@ categories = Category.create([
     price: 9,
     category_id: 5,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Chessecake%20DDL.png?alt=media&token=15d4fcd7-a0fb-4551-a111-82fbf50039e2",
+    image: "https://i.postimg.cc/50sj7x0s/Chessecake-DDL.png",
     state: "disponible"
   },
   {
@@ -332,7 +332,7 @@ categories = Category.create([
     price: 8,
     category_id: 5,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Tiramis%C3%BA.png?alt=media&token=b9823746-b368-4606-95a1-989af7b7e2b7",
+    image: "https://i.postimg.cc/KvRQ5jzs/Tiramis.png",
     state: "disponible"
   },
   {
@@ -341,7 +341,7 @@ categories = Category.create([
     price: 8,
     category_id: 5,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Panqueques.png?alt=media&token=af9a6d9f-d555-4b11-a7bb-c662da09de16",
+    image: "https://i.postimg.cc/JnVSfJyn/Panqueques.png",
     state: "disponible"
   },
   {
@@ -350,7 +350,7 @@ categories = Category.create([
     price: 2,
     category_id: 6,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Agua%20mineral.png?alt=media&token=97e1b1d4-fd74-42a7-a684-12ceb7412cba",
+    image: "https://i.postimg.cc/KvztyWhK/Agua-mineral.png",
     state: "disponible"
   },
   {
@@ -359,7 +359,7 @@ categories = Category.create([
     price: 4,
     category_id: 6,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Limonada%20Cl%C3%A1sica.png?alt=media&token=acfd1f2f-be95-4d83-92c3-545d96d3b6f9",
+    image: "https://i.postimg.cc/d0Lqs8tj/Limonada-Cl-sica.png",
     state: "agotado"
   },
   {
@@ -368,7 +368,7 @@ categories = Category.create([
     price: 7,
     category_id: 6,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Gin%20Tonic.png?alt=media&token=33a74e93-bc49-4d65-b008-c871d3a8a1d8",
+    image: "https://i.postimg.cc/76JYVSFZ/Gin-Tonic.png",
     state: "disponible"
   },
   {
@@ -377,7 +377,7 @@ categories = Category.create([
     price: 7,
     category_id: 6,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Jugos%20Frutales.png?alt=media&token=6dfa2c5c-703e-46bc-b96e-57e163d5cc3d",
+    image: "https://i.postimg.cc/W19Nc9j4/Jugos-Frutales.png",
     state: "disponible"
   },  {
     name: "Refresco de naranja",
@@ -385,7 +385,7 @@ categories = Category.create([
     price: 6,
     category_id: 6,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Refresco%20de%20naranja.png?alt=media&token=742b7013-fa5a-4a52-a09b-26dfeac750fa",
+    image: "https://i.postimg.cc/wvQ4nr8f/Refresco-de-naranja.png",
     state: "disponible"
   },
   {
@@ -394,7 +394,7 @@ categories = Category.create([
     price: 6,
     category_id: 6,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Refresco%20de%20Pomelo.png?alt=media&token=706df5b1-83a9-4da7-bf0d-873a9d0ceccd",
+    image: "https://i.postimg.cc/mkdXgFr7/Refresco-de-Pomelo.png",
     state: "disponible"
   },
   {
@@ -403,7 +403,7 @@ categories = Category.create([
     price: 3,
     category_id: 6,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/T%C3%A9%20Chai.png?alt=media&token=a6de0292-7249-4082-a122-45aa736e831b",
+    image: "https://i.postimg.cc/k5xTtH4J/T-Chai.png",
     state: "agotado"
   },
   {
@@ -412,7 +412,7 @@ categories = Category.create([
     price: 3,
     category_id: 6,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Hierbas%20Antigripales.png?alt=media&token=16754822-af98-46bb-8987-90d799240385",
+    image: "https://i.postimg.cc/yxq6rkKX/Hierbas-Antigripales.png",
     state: "agotado"
   },
   {
@@ -421,7 +421,7 @@ categories = Category.create([
     price: 3,
     category_id: 2,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Relleno%20Franc%C3%A9s.png?alt=media&token=4207e318-ba3f-4aed-a519-838ee4b32bcd",
+    image: "https://i.postimg.cc/Nj2JQFvr/Relleno-Franc-s.png",
     state: "agotado"
   },
   {
@@ -430,7 +430,7 @@ categories = Category.create([
     price: 9,
     category_id: 5,
     time_preparation: "30-35 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Mousse%20de%20Fresa.png?alt=media&token=764a3da5-b1f1-4453-b501-f49dcb237c66",
+    image: "https://i.postimg.cc/zv5ZgW5M/Mousse-de-Maracuy.png",
     state: "disponible"
   },
   {
@@ -439,7 +439,7 @@ categories = Category.create([
     price: 10,
     category_id: 4,
     time_preparation: "10-15 min",
-    image: "https://firebasestorage.googleapis.com/v0/b/veride-d5cf8.appspot.com/o/Primaveral%20.png?alt=media&token=2e831a7d-9d28-4d89-8c80-427df9a479e2",
+    image: "https://i.postimg.cc/R0fDLFPz/Primaveral.png",
     state: "disponible"
   }
 ])
