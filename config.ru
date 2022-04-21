@@ -6,9 +6,7 @@ run Rails.application
 
 use Rack::Cors do
   allow do
-    origins '*',
-            /\Ahttp:\/\/192\.168\.0\.\d{1,3}(:\d+)?\z/
-            # regular expressions can be used here
+    origins '*'
 
     resource '*',
       headers: :any,
