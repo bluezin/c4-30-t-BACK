@@ -75,7 +75,10 @@ class OrdersController < ApplicationController
 
     if @order.present?
       @order.products["count"] = params[:count] - 1
-      render json: @order.save
+
+      if @order.save
+        render json: @user.orders
+      end
     else
       render json: "Algó salio mal"
     end
